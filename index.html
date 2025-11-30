@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boba Delights | A Delightful Refreshing Escape</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo/boba-delights-logo.png" alt="Boba Delights logo" class="brand-logo" />
+      <div class="brand-text">
+        <h1>Boba Delights</h1>
+        <p>A Delightful Refreshing Escape.™</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#hero">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#order">Order</a>
+      <a href="#rewards">Rewards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#order" class="btn primary header-cta">Order Now</a>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-left">
+        <div class="hero-badge-top">Fresh Fruit · Milk Tea · Snacks</div>
+        <h2>Fresh, colorful boba and snacks made with real fruit and real love.</h2>
+        <p>
+          Family-owned boba tea and smoothie bar in Perris, CA. Build your drink, choose toppings,
+          and pair it with crispy gyoza or takoyaki for the perfect break.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn primary">View Menu</a>
+          <a href="#order" class="btn outline">Order Online</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-menu-frame">
+          <img src="assets/menu/BobaDelights_MenuPoster.jpg" alt="Boba Delights pastel menu" class="hero-menu-image" />
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <header class="section-header">
+        <h3>Interactive Menu</h3>
+        <p>Tap a category to see drinks and snacks with photos, prices and descriptions.</p>
+      </header>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-category="fruit-smoothies">Fruit Smoothies</button>
+        <button class="menu-tab" data-category="milk-teas">Milk Teas</button>
+        <button class="menu-tab" data-category="ice-teas">Ice Teas</button>
+        <button class="menu-tab" data-category="snacks">Snacks</button>
+        <button class="menu-tab" data-category="toppings">Toppings</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid"></div>
+    </section>
+
+    <section id="order" class="section section-alt">
+      <header class="section-header">
+        <h3>Order Boba Delights</h3>
+        <p>Pickup, delivery or walk-up — whatever fits your day.</p>
+      </header>
+      <div class="order-grid">
+        <div class="order-card">
+          <h4>Order Online</h4>
+          <p>Use your favorite platform to order drinks and snacks.</p>
+          <div class="order-buttons">
+            <a class="btn primary full" href="https://order.online/store/boba-delights-perris-24678055/?hideModal=true&pickup=true" target="_blank" rel="noopener">
+              Order.Online (Pickup)
+            </a>
+            <a class="btn outline full" href="https://www.doordash.com/store/boba-delights-perris-24678055/" target="_blank" rel="noopener">
+              DoorDash Delivery
+            </a>
+          </div>
+        </div>
+        <div class="order-card">
+          <h4>Quick Request (Demo)</h4>
+          <p>This form is a preview. Later you can connect it to email, WhatsApp or your POS.</p>
+          <form id="quick-order-form" class="quick-form">
+            <label>
+              Drink or Snack
+              <input type="text" name="item" placeholder="Ex. Strawberry Smoothie, Fried Gyoza" required />
+            </label>
+            <label>
+              Size / Qty
+              <input type="text" name="size" placeholder="20 oz, 1 order, etc." />
+            </label>
+            <label>
+              Notes
+              <textarea name="notes" rows="2" placeholder="Less ice, extra boba, no onion, etc."></textarea>
+            </label>
+            <button class="btn primary full" type="submit">Preview Request</button>
+          </form>
+          <p id="quick-order-result" class="quick-result"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rewards" class="section">
+      <header class="section-header">
+        <h3>Rewards Game (Demo)</h3>
+        <p>Move the bubbles, earn points and imagine turning them into real snacks and drink rewards.</p>
+      </header>
+      <div class="rewards-layout">
+        <div class="game-board" id="game-board"></div>
+        <div class="rewards-side">
+          <div class="score-card">
+            <p>Current Points</p>
+            <h4 id="score">0</h4>
+          </div>
+          <button id="play-btn" class="btn primary full">Play / Reset</button>
+          <p class="rewards-note">
+            This is just a visual preview. Later you can connect it to a real loyalty system.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt contact-section">
+      <header class="section-header">
+        <h3>Visit Boba Delights</h3>
+        <p>Located inside the Amazon Harley Knox parking lot in Perris, CA.</p>
+      </header>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Location &amp; Hours</h4>
+          <p>
+            <br />
+            Perris, CA 92570
+          </p>
+          <p>
+            Mon–Sat · 11:00 am – 7:30 pm<br />
+            (Hours may change on holidays)
+          </p>
+        </div>
+        <div class="contact-card">
+          <h4>Stay Connected</h4>
+          <p>Follow Boba Delights for new flavors, limited drops and seasonal collabs.</p>
+          <ul class="contact-links">
+            <li><a href="https://bobadelights.com/" target="_blank" rel="noopener">Official Website</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram (add handle)</a></li>
+            <li><a href="mailto:info@bobadelights.com">info@bobadelights.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2025 Boba Delights. A Delightful Refreshing Escape.™</span>
+      <span>Designed with love by Jae-P</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
